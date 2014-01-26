@@ -1,0 +1,7 @@
+Kappaback is a website hosted on lighttpd, with the backend written in python and most of the browser-side stuff written in javascript.
+
+The backend is powered by web.py. When a user navigates to a page on Kappaback, the file index.py handles the page generation. Usually it does this by generating one or more HTML templates, which can be found in the folder "Templates". CSS and .js stuff can be found in the "static" folder.
+
+This git repository does not include the IRC bot that logs Twitch chat from Twitch's IRC server.
+
+I would like to thank packrat386 for helping me out with this project. You can find his website at packrat386.com.
