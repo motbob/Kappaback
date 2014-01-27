@@ -10,10 +10,16 @@ $def with (VOD)
 		var flashvars = {};
 		var params = { scale: "exactFit", allowScriptAccess: "always" };
 		var atts = { id: "myytplayer" };
-
-		swfobject.embedSWF("http://www.youtube.com/v/$VOD?enablejsapi=1&playerapiid=ytplayer&version=3",
-                       "ytapiplayer", "100%", "512", "8", null, null, params, atts)
-        </script>
+		function displTime() {
+                        if (! ytplayer)
+                                alert("NO player object!");
+                        var min = ytplayer.getCurrentTime();
+			var mind = parseInt(min);
+                        var m = Math.floor(mind / 60);
+                        var secd = mind % 60;
+                        $$('#pt').html(m + ':' + secd);
+                }
+	</script>
     </head>
     <body>
         <div id="ytapiplayer">
@@ -23,24 +29,15 @@ $def with (VOD)
 	<div id="wrapper">
 	<div id="flash">
 	<script type="text/javascript">
-		swfobject.embedSWF("http://www.youtube.com/v/VIDEO_ID?enablejsapi=1&playerapiid=ytplayer&version=3", "ytapiplayer", "425", "356", "8", null, null, params, atts)
+		swfobject.embedSWF("http://www.youtube.com/v/$VOD?enablejsapi=1&playerapiid=ytplayer&version=3", "ytapiplayer", "100%", "512", "8", null, null, params, atts)
+		setInterval(displTime,1000);
 	</script></div></div>
 	<script type="text/javascript">
 		function onYouTubePlayerReady(playerId) {
                         ytplayer = document.getElementById("myytplayer");
                 }
-		function displTime() {
-			if (! ytplayer)
-				alert("NO player object!");
-			var mind = player.getCurrentTime();
-			var m = Math.floor(mind / 60);
-			var secd = mind % 60;
-			$$("#pt").html(m + ":" + s);
-		}
-		setInterval(displTime,1000);
 	</script> 
 	<div id="pt"></div>
-	<h1>asdf</h1>
     </body>
 </html>
 
