@@ -1,0 +1,25 @@
+--2014-02-22 05:55:03--  http://www.teamliquid.net/staff/motbob/twitch/banner.png
+Resolving www.teamliquid.net (www.teamliquid.net)... 2001:48c8:1:400::1:1, 173.231.136.216
+Connecting to www.teamliquid.net (www.teamliquid.net)|2001:48c8:1:400::1:1|:80... failed: Connection timed out.
+Connecting to www.teamliquid.net (www.teamliquid.net)|173.231.136.216|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 25381 (25K) [image/png]
+Saving to: `banner.png'
+
+     0K .......... .......... ....                            100%  279K=0.09s
+
+2014-02-22 05:56:06 (279 KB/s) - `banner.png' saved [25381/25381]
+
+--2014-02-22 05:56:06--  http://www.teamliquid.net/staff/motbob/twitch/face.png
+Reusing existing connection to www.teamliquid.net:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 30758 (30K) [image/png]
+Saving to: `face.png'
+
+     0K .......... .......... ..........                      100%  336K=0.09s
+
+2014-02-22 05:56:07 (336 KB/s) - `face.png' saved [30758/30758]
+
+FINISHED --2014-02-22 05:56:07--
+Total wall clock time: 1m 4s
+Downloaded: 2 files, 55K in 0.2s (308 KB/s)
